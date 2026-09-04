@@ -13,6 +13,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
+import { BackToTop } from "@/components/site/BackToTop";
 import { site, seo } from "@/data/site";
 
 function NotFoundComponent() {
@@ -127,6 +128,7 @@ function RootComponent() {
         <Outlet />
       </main>
       <Footer />
+      <BackToTop />
     </QueryClientProvider>
   );
 }
