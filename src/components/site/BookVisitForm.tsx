@@ -12,7 +12,7 @@ export function BookVisitForm({ tone = "light" }: { tone?: "light" | "dark" }) {
     date: "",
     message: "",
   });
-  const [target, setTarget] = useState(primaryPhone.wa);
+  const [target, setTarget] = useState<string>(primaryPhone.wa);
 
   const set = (k: keyof typeof values) => (e: { target: { value: string } }) =>
     setValues((v) => ({ ...v, [k]: e.target.value }));
